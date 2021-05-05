@@ -5,8 +5,10 @@ defmodule UserPointsWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/api", UserPointsWeb do
+  scope "/", UserPointsWeb do
     pipe_through :api
+
+    get "/", ApiController, :winning_users
   end
 
   # Enables LiveDashboard only for development

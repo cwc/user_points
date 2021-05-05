@@ -1,19 +1,10 @@
 # UserPoints
 
-To start your Phoenix server:
+To start the server:
 
   * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server`
+  * Verify that your Postgres connection details are correct in config/dev.exs
+  * Create and migrate your database with `mix ecto.setup` (generating the users takes a bit)
+  * `mix phx.server`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+Navigate to or curl http://localhost:4000 to see the API response. Data is updated every 60 seconds.
